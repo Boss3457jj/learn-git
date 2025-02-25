@@ -1,0 +1,139 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f8fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  
+    height: auto;  
+    padding-top: 50px; 
+}
+
+.laliga-standings {
+    background-color: #fff;
+    width: 80%;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    animation: fadeIn 1s ease-in-out;
+    margin-top: 20px; 
+}
+
+.laliga-standings h2 {
+    text-align: center;
+    color: #1e3a8a; 
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.laliga-standings table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.laliga-standings th,
+.laliga-standings td {
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.laliga-standings th {
+    background-color: #1e3a8a; 
+    color: #fff;
+    font-weight: 600;
+}
+
+.laliga-standings td {
+    background-color: #f4f5f7;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.laliga-standings tr:nth-child(even) td {
+    background-color: #e9f0ff;
+}
+
+.laliga-standings tr:hover td {
+    background-color: #a5b8e0;
+    color: #fff;
+    transform: translateX(5px);
+    cursor: pointer;
+}
+
+.laliga-standings td:first-child {
+    font-weight: 600;
+    color: #ffcd00;
+}
+
+.laliga-standings td:last-child {
+    font-weight: 600;
+    color: #28a745; 
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    padding: 12px;
+    width: 80%;
+    border: 2px solid #1e3a8a;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-bar input:focus {
+    border-color: #ffcd00;
+}
+nav {
+    background-color: #000000;
+    padding: 10px 0;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 1000;  
+}
+
+.nav-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+}
+body {
+    padding-top: 70px;  
+}
